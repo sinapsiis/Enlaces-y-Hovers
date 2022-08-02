@@ -1,0 +1,84 @@
+@charset "UTF-8";
+
+
+body{
+    /*los formatos de color pueden estar en rgb, hexadecimal o con palabras clave*/
+    background-color: rgb(201, 169, 231);
+    color: #000000;
+}
+
+header{
+    background-color: antiquewhite;
+    border: 2px solid sienna;
+    width: 80%;
+}
+/* selectores de etiqueta*/
+div{
+
+    background-color: aquamarine;
+  /*  margin: 10px;  igualo todos los margenes a 10px*/
+  /*  margin: 10px 50px;  shortcut; arriba y abajo tengo margenes de 10px y en los laterales 50px*/
+    margin: 10px 15px 20px 30px; 
+    /*define los margenes en el siguiente orden 
+    arriba-derecha-abajo-izquierda*/
+  
+}
+/* agrupación de selectores pueden entrar cualquier tipo de selector
+por ejemplo selectores de etiqueta , dselectores de clase , selectores de id,....*/
+h1, h2, img, #capaespecial2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    text-decoration: underline;
+    color:pink;
+    letter-spacing: normal;
+   /* background-color: green;*/
+    
+    
+    
+}
+
+h2{
+    color: blue;
+    font-family:Cambria;
+}
+/*este es un selector de clase se aplica a todos los elementos que tengan esa clase*/
+.capasrojas{
+    background-color: red;  
+}
+
+.titulo{
+    color:crimson ;
+}
+/*este selector de id (identificador único) solo sirve para nombrar a un solo elemento dentro del html*/
+#capaespecial{
+    background-color: orangered;
+}
+
+#subtituloarriba{
+    vertical-align: top;
+    text-align: center;}
+
+/*selector descendente*/
+/*este selector se aplica a todas las etiquetas que esten dentro de otra etiqueta
+el selector se lee de derecha a izquierda se aplica a todos los a que sean descendentes de div */
+div a{
+    text-decoration:none ;
+    color: white;
+}
+
+header div{
+    color:gold;
+}
+
+header p{
+    color:darkorchid;
+}
+
+div span{
+    color:green;
+}
+/*podemos encadenar cuantos selectores descendentes queramos,
+ en este caso es el mismo span que el que se aolica la regla de arriba*/
+header div p span{
+    color:blue;
+}
